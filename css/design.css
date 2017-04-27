@@ -1,0 +1,45 @@
+li {
+    list-style: none;
+}
+
+body {
+    margin: 0px;
+    background-image: url(../images/background2.jpg);
+}
+
+footer {
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.box {
+    margin: 40px;
+    background-color: white;
+    width: 400px;
+    border-radius: 20px;
+    text-shadow: 0 0 1px black;
+}
+
+.boxhead {
+    background-color: #1d87e2;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 10px;
+    font-family: 'Nova Oval', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+ros-footer {
+    display: flex;
+    width: 99%;
+    justify-content: space-between;
+}
+
+b,
+u {
+    padding: 0px;
+    margin: 0px;
+}

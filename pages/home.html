@@ -1,0 +1,30 @@
+<div class="container mt-5" ng-controller="citycontroller">
+    <div class="row pt-3 searchDiv">
+        <input type="text" ng-model="cityName" id="cityName" placeholder="Search places.." class="form-control col-md-7">
+        <div class="col-md-3"></div>
+        <button ng-click="searchByCid()" id="checkcity" class="btn btn-secondary col-md-2">Check</button>
+    </div>
+    <div class="panel panel-info">
+        <div class="panel-heading"> {{result.location.city}}, {{result.location.country}}
+            <br> <i>{{result.item.condition.text|uppercase}}</i> </div>
+        <div class="panel-body">
+            <ul>
+                <div>
+                    <li style="font-family: 'Nova Oval',sans-serif ;font-size: 80px;"><img src="images/Temperature-80.png" alt="Temperature"><b>{{result.item.condition.temp}}°{{result.units.temperature}} </b></li>
+                </div>
+                <div style="padding-left:30px;">
+                    <li style="font-family: 'Macondo',sans-serif; font-size:30px"><img src="images/Humidity-50.png" alt="Humidity"> {{result.atmosphere.humidity}} %</li>
+                    <li style="font-family: 'Macondo',sans-serif; font-size:30px"><img src="images/Fan-50.png" alt="Wind Speed"> {{result.wind.speed}} {{result.units.speed}}</li>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div class="hourlycontainer">
+        <div ng-repeat="r in result.item.forecast|limitTo:7" class="hourly_li">
+            <br> <b><u>{{r.day}}</u></b>
+            <br> {{r.date|removeYear}}
+            <br> Max. {{r.high}}°{{result.units.temperature}}
+            <br> Min. {{r.low}}°{{result.units.temperature}}
+            <br> {{r.text}} </div>
+    </div>
+</div>

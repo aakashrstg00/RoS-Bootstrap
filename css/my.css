@@ -1,0 +1,231 @@
+@media screen and (min-width:740px) {
+    body {
+        margin: 0px;
+        background-image: url(../images/background2.jpg);
+    }
+    #navmenu>li {
+        float: right;
+    }
+    #navmenu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #1e202b;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        border-bottom-width: thin;
+    }
+    #navmenu>li>a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 30px;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+    }
+    #navmenu>li>a:hover {
+        background-color: cornflowerblue;
+    }
+    #cityName {
+        width: 80%;
+        color: white;
+        border-radius: 2em;
+        border: none;
+        background: #181a23;
+        padding-left: 1.5em;
+    }
+    #checkcity {
+        border-radius: 30px;
+        background: #1d87e2;
+        color: white;
+        border: none;
+        width: 6em;
+    }
+    #checkcity:hover {
+        background-color: cornflowerblue;
+    }
+    #checkcity:active {
+        background-color: cadetblue;
+    }
+    #main {
+        padding-top: 80px;
+        padding-left: 40px;
+    }
+    #aboutmain {
+        background-image: url(../images/background.jpg);
+        border-radius: 60px;
+        padding: 10px 20px;
+        color: white;
+        font-family: 'Nova Oval', sans-serif;
+        margin-top: 30px;
+        margin-right: 30px;
+        font-size: 30px;
+    }
+    #aboutmain:hover {
+        background-image: url();
+    }
+    .hourly_li:hover {
+        background-image: url(../images/SkyBG.jpg);
+        box-shadow: 0px 0px 20px 5px rgba(35, 153, 192, 0.76);
+        color: black;
+    }
+    .hourlycontainer {
+        display: inline-flex;
+        justify-content: space-between;
+        width: 95%;
+    }
+    .hourly_li {
+        color: white;
+        font-size: 20px;
+        border-radius: 10px;
+        padding: 10px;
+        font-family: 'Macondo', sans-serif;
+        background-image: url(../images/background.jpg);
+        margin: 0.4em;
+    }
+    .searchDiv {
+        margin-right: 30px;
+        width: 95%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2em;
+        height: 3em;
+    }
+    .searchCon {}
+}
+
+@media screen and (min-width:1000px) {
+    body {
+        margin: 0px;
+        background-image: url(../images/background2.jpg);
+    }
+    #navmenu>li {
+        float: right;
+    }
+    #navmenu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #1e202b;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        border-bottom-width: thin;
+    }
+    #navmenu>li>a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 30px;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+    }
+    #navmenu>li>a:hover {
+        background-color: cornflowerblue;
+    }
+    #cityName {
+        width: 80%;
+        color: white;
+        border-radius: 2em;
+        border: none;
+        background: #181a23;
+        padding-left: 1.5em;
+    }
+    #checkcity {
+        border-radius: 30px;
+        background: #1d87e2;
+        color: white;
+        border: none;
+        width: 6em;
+    }
+    #checkcity:hover {
+        background-color: cornflowerblue;
+    }
+    #checkcity:active {
+        background-color: cadetblue;
+    }
+    #main {
+        padding-top: 80px;
+        padding-left: 40px;
+    }
+    #aboutmain {
+        background-image: url(../images/background.jpg);
+        border-radius: 60px;
+        padding: 10px 20px;
+        color: white;
+        font-family: 'Nova Oval', sans-serif;
+        margin-top: 30px;
+        margin-right: 30px;
+        font-size: 30px;
+    }
+    #aboutmain:hover {
+        background-image: url();
+    }
+    .hourly_li:hover {
+        background-image: url(../images/SkyBG.jpg);
+        box-shadow: 0px 0px 20px 5px rgba(35, 153, 192, 0.76);
+        color: black;
+    }
+    .hourlycontainer {
+        display: inline-flex;
+        justify-content: space-between;
+        width: 95%;
+    }
+    .hourly_li {
+        color: white;
+        font-size: 20px;
+        border-radius: 10px;
+        padding: 10px;
+        font-family: 'Macondo', sans-serif;
+        background-image: url(../images/background.jpg);
+        margin: 0.4em;
+    }
+    .searchDiv {
+        margin-right: 30px;
+        width: 95%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2em;
+        height: 3em;
+    }
+    .searchCon {}
+}
+
+
+/*@media screen and (min-width:80px) {
+    #hourly_li {
+        list-style-type: none;
+        display: inline-block;
+        color: white;
+        font-size: 20px;
+        display: inline-block;
+        margin-right: 60px;
+        margin-bottom: 20px;
+        font-family: 'Macondo', sans-serif;
+        padding: 10px;
+        padding-top: 4px;
+        border-radius: 10px;
+        background-image: url(../images/background.jpg);
+    }
+    #hourly_li:hover {
+        background-image: url(../images/SkyBG.jpg);
+        box-shadow: 0px 0px 20px 5px rgba(35, 153, 192, 0.76);
+        color: #000000;
+    }
+    #aboutmain {
+        background-image: url(../images/background.jpg);
+        border-radius: 60px;
+        padding: 10px 20px;
+        color: white;
+        font-family: 'Nova Oval', sans-serif;
+        margin-top: 30px;
+        margin-right: 30px;
+        font-size: 30px;
+    }
+    #aboutmain:hover {
+        background-image: url();
+    }
+}*/
