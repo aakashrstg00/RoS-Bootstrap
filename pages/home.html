@@ -6,7 +6,7 @@
     </div>
     <div class="alert alert-warning text-center" ng-if="!searchWorked && searchClicked"><strong> Loading... Please wait,</strong> Retry search if results don't arrive for long </div>
     <div class="card my-3" ng-if="searchWorked">
-        <div class="card-header text-center card-inverse card-info text-white" style="font-size:1rem"> {{result.location.city}}, {{result.location.country}}
+        <div class="card-header text-center card-inverse card-info text-white" style="font-size:1rem; font-family:'Montserrat',sans-serif;"> {{result.location.city}}, {{result.location.country}}
             <br> <b><i>{{result.item.condition.text|uppercase}}</i></b> </div>
         <div class="card-block text-muted">
             <ul>
@@ -25,14 +25,3 @@
             <br> {{r.text}} </div>
     </div>
 </div>
-<style>
-    .hourly-li {
-        font-size: 20px;
-        border-radius: 10px;
-        padding: 10px;
-        font-family: 'Macondo', sans-serif;
-        background-image: url("../images/jumbo-bg.jpg");
-        background-size: cover;
-        margin: 0.4em;
-    }
-</style>
