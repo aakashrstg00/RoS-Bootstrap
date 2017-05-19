@@ -1,1 +1,2 @@
-# RoS-Bootstrap
+# Raindrops or Sunshine
+A weather and forecasting app.
