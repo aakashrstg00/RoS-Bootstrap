@@ -18,3 +18,12 @@ div.hourly-li:hover {
     transform: rotate(14deg);
     transform: scale(1.2);
 }
+
+div.hourly-li:active {
+    transition: 0.1s;
+    color: black;
+    text-align: center;
+    background-image: url();
+    box-shadow: 0px 0px 50px -5px #000000;
+    transform: rotate(14deg);
+}
