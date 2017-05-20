@@ -1,12 +1,12 @@
 app.directive("rosHeader", function () {
     return {
-        templateUrl: "../../pages/directives/header.html"
+        templateUrl: "../pages/directives/header.html"
         , restrict: "E"
     };
 });
 app.directive("rosFooter", function () {
     return {
-        templateUrl: "../../pages/directives/footer.html"
+        templateUrl: "../pages/directives/footer.html"
         , restrict: "E"
     };
 });
