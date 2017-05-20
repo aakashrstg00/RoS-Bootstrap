@@ -1,0 +1,27 @@
+<div class="container mt-5" ng-controller="citycontroller">
+    <div class="row py-3 searchDiv">
+        <input type="text" ng-model="cityName" id="cityName" placeholder="Search places.." class="form-control col-md-7" ng-autocomplete details="" options="{types:'(cities)'}">
+        <div class="col-md-3"></div>
+        <button ng-click="searchByCid()" id="checkcity" class="btn btn-secondary col-md-2">Check</button>
+    </div>
+    <div class="alert alert-warning text-center" ng-if="!searchWorked && searchClicked"><strong> Loading... Please wait,</strong> Retry search if results don't arrive for long </div>
+    <div class="card my-3" ng-if="searchWorked">
+        <div class="card-header text-center card-inverse card-info text-white" style="font-size:1rem; font-family:'Montserrat',sans-serif; border-color:#5bc0de;"> {{result.location.city}}, {{result.location.country}}
+            <br> <b><i>{{result.item.condition.text|uppercase}}</i></b> </div>
+        <div class="card-block text-muted">
+            <ul>
+                <div class="card-title text-center" style="font-family: 'Nova Oval',sans-serif ;font-size:3rem;"> <img src="images/Temperature-80.png" alt="Temperature" class="img-fluid"> <b>{{result.item.condition.temp}}°{{result.units.temperature}} </b> </div>
+                <div class="card-text text-center" style="font-family: 'Macondo',sans-serif; font-size:1.5rem"> <img src="images/Humidity-50.png" alt="Humidity" class="img-fluid"> {{result.atmosphere.humidity}} %
+                    <br> <img src="images/Fan-50.png" alt="Wind Speed" class="img-fluid"> {{result.wind.speed}} {{result.units.speed}} </div>
+            </ul>
+        </div>
+    </div>
+    <div class="justify-content-around row" ng-if="searchWorked">
+        <div ng-repeat="r in result.item.forecast|limitTo:7" class="hourly-li">
+            <br> <b><u>{{r.day}}</u></b>
+            <br> {{r.date|removeYear}}
+            <br> Max. {{r.high}}°{{result.units.temperature}}
+            <br> Min. {{r.low}}°{{result.units.temperature}}
+            <br> {{r.text}} </div>
+    </div>
+</div>
