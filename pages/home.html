@@ -7,7 +7,7 @@
     <div class="alert alert-warning text-center" ng-if="!searchWorked && searchClicked"><strong> Loading... Please wait,</strong> Retry search if results don't arrive for long </div>
     <div class="card my-3" ng-if="searchWorked">
         <div class="card-header text-center card-inverse card-info text-white" style="font-size:1rem; font-family:'Montserrat',sans-serif; border-color:#5bc0de;"> {{result.location.city}}, {{result.location.country}}
-            <br> <b><i>{{result.item.condition.text|uppercase}}</i></b> </div>
+            <br> <b><i style="font-size:1.3rem;">{{result.item.condition.text|uppercase}}</i></b> </div>
         <div class="card-block text-muted">
             <ul>
                 <div class="card-title text-center" style="font-family: 'Nova Oval',sans-serif ;font-size:3rem;"> <img src="images/Temperature-80.png" alt="Temperature" class="img-fluid"> <b>{{result.item.condition.temp}}°{{result.units.temperature}} </b> </div>
