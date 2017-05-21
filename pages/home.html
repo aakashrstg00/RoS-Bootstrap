@@ -8,7 +8,7 @@
     <div class="card my-3" ng-if="searchWorked">
         <div class="card-header text-center card-inverse card-info text-white" style="font-size:1rem; font-family:'Montserrat',sans-serif; border-color:#5bc0de;"> {{result.location.city}}, {{result.location.country}}
             <br> <b><i style="font-size:1.3rem;">{{result.item.condition.text|uppercase}}</i></b> </div>
-        <div class="card-block text-muted">
+        <div class="card-block">
             <ul>
                 <div class="card-title text-center" style="font-family: 'Nova Oval',sans-serif ;font-size:3rem;"> <img src="images/Temperature-80.png" alt="Temperature" class="img-fluid"> <b>{{result.item.condition.temp}}°{{result.units.temperature}} </b> </div>
                 <div class="card-text text-center" style="font-family: 'Macondo',sans-serif; font-size:1.5rem"> <img src="images/Humidity-50.png" alt="Humidity" class="img-fluid"> {{result.atmosphere.humidity}} %
